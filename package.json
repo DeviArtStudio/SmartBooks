@@ -1,8 +1,8 @@
 {
-  "name": "electron-react-typescript",
-  "author": "Diego Fernandes <diego.schell.f@gmail.com>",
-  "version": "2.0.0",
-  "description": "An Electron boilerplate including TypeScript, React, Jest and ESLint.",
+  "name": "smart-books",
+  "author": "ViArtStudio",
+  "version": "1.0.0",
+  "description": "Application that allows you to read books with a great user experience",
   "main": "./.webpack/main/index.js",
   "scripts": {
     "start": "electron-forge start",
