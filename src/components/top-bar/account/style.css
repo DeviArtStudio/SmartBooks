@@ -1,0 +1,16 @@
+.avatarContainer {
+    float: right;
+    margin: 5px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.text {
+    text-align: center;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100px;
+}
+
