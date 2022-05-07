@@ -1,4 +1,5 @@
 import { Nav } from 'rsuite';
+import { useState } from 'react';
 
 const EVENT_KEYS = {
     'file':   'file',
@@ -17,12 +18,18 @@ function NavItem ({ eventKey }: { eventKey: string }) {
 }
 
 export function MainMenu () {
+    const [activeTabKey, setActiveTabKey] = useState(EVENT_KEYS.file);
+
     return (
         <div>
-            <Nav appearance="tabs">
-                { Object.keys(EVENT_KEYS).map((ek, i) => <NavItem eventKey={ ek } key={ i }/>) }
-            </Nav>
-
+            <div>
+                <Nav appearance="tabs" activeKey={ activeTabKey } onSelect={ setActiveTabKey } >
+                    { Object.keys(EVENT_KEYS).map((ek, i) =>
+                        <NavItem eventKey={ ek } key={ i }/>) }
+                </Nav>
+            </div>
+            <div>
+            </div>
         </div>
     )
 }
