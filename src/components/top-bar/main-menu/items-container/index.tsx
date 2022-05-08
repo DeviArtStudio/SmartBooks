@@ -1,14 +1,28 @@
-import './style.css';
-import { MenuItem } from '../menu-item';
+import { EditorContainer } from './editor-container'
+import { FileContainer } from './file-container'
+import './style.css'
 
 interface ItemsContainerProps {
-    activeKey: string;
+  activeKey: string
 }
 
 const styles = {
-    itemsContainer: 'itemsContainer',
+  itemsContainer: 'itemsContainer',
+  menuToolbar: 'menuToolbar',
 }
 
-export function ItemsContainer ({ activeKey }: ItemsContainerProps) {
-    return <MenuItem text={activeKey}></MenuItem>
+export function ItemsContainer({ activeKey }: ItemsContainerProps) {
+  if (activeKey === 'editor')
+    return (
+      <div className={styles.itemsContainer}>
+        <EditorContainer />
+      </div>
+    )
+  else if (activeKey === 'file')
+    return (
+      <div className={styles.itemsContainer}>
+        <FileContainer />
+      </div>
+    )
+  return <div className={styles.itemsContainer}></div>
 }
