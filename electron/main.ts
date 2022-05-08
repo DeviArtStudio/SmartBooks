@@ -30,7 +30,12 @@ function createWindow () {
     mainWindow.on('closed', () => {
         mainWindow = null
     })
-    const menu = new Menu()
+
+    mainWindow.setMenu(createMenu());
+}
+
+function createMenu () {
+    const menu     = new Menu()
     const menuItem = new MenuItem({
         label: 'DevTools',
         click: () => {
@@ -38,7 +43,7 @@ function createWindow () {
         },
     });
     menu.append(menuItem);
-    mainWindow.setMenu(menu);
+    return menu;
 }
 
 async function registerListeners () {

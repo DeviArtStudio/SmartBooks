@@ -29,8 +29,7 @@ export function AccountInfo () {
     return (
         <>
             { userInfo && <div className={ styles.CONTAINER }>
-                <Avatar src={ userInfo.avatarSrc } circle/>
-                <div className={styles.NAME_TEXT} title={userInfo.publicName}>{ userInfo.publicName }</div>
+                <Avatar src={ userInfo.avatarSrc } circle title={userInfo.publicName}/>
             </div> }
         </>)
 }
