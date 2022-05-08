@@ -1,0 +1,12 @@
+.editor {
+  background-color: rgb(251, 251, 251);
+  height: 800px;
+  width: 700px;
+}
+
+.editorWrapper {
+  margin-top: 20px;
+  margin-left: 150px;
+  display: flex;
+  align-items: center;
+}

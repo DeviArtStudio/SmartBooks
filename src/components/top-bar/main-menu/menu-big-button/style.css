@@ -1,0 +1,11 @@
+.bigButton {
+  width: 60px;
+  height: 60px;
+  padding: 0;
+}
+
+.bigButtonText {
+  padding: 0;
+  text-align: center;
+  font-size: 11px;
+}
