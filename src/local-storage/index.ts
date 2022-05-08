@@ -18,7 +18,7 @@ class LocalDataStorage {
 
   private loadUserData() {
     return {
-      [STORAGE_PROPS.theme]: 'light',
+      [STORAGE_PROPS.theme]: 'dark',
     }
   }
 

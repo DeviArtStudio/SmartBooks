@@ -10,7 +10,7 @@ const style = {
 export function Editor() {
   return (
     <div className={style.editorWrapper}>
-      <Panel className={style.editor} shaded></Panel>
+      <Panel className={style.editor} shaded contentEditable="true"></Panel>
     </div>
   )
 }
