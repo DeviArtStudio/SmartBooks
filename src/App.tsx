@@ -1,5 +1,4 @@
 import { Affix, Col, CustomProvider, Grid, Row } from 'rsuite'
-
 import { TopBar } from './components/top-bar'
 import 'rsuite/styles/index.less'
 import { useEffect, useState } from 'react'
