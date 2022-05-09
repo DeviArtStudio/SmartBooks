@@ -1,8 +1,15 @@
-import { MainMenu } from './main-menu';
+import { MainMenu } from './main-menu'
 
-export function TopBar () {
-    return (
-        <div>
-            <MainMenu/>
-        </div>);
+import './style.css'
+
+const style = {
+  topBar: 'topBar',
+}
+
+export function TopBar() {
+  return (
+    <div className={style.topBar}>
+      <MainMenu />
+    </div>
+  )
 }

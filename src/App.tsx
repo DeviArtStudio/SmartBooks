@@ -1,5 +1,4 @@
-import { Col, CustomProvider, Grid, Row } from 'rsuite'
-
+import { Affix, Col, CustomProvider, Grid, Row } from 'rsuite'
 import { TopBar } from './components/top-bar'
 import 'rsuite/styles/index.less'
 import { useEffect, useState } from 'react'
@@ -30,7 +29,9 @@ export function App() {
     <CustomProvider theme={appliedTheme}>
       <Grid fluid className="mainGrid">
         <Row>
-          <TopBar />
+          <Affix>
+            <TopBar />
+          </Affix>
         </Row>
         <Row>
           <Col lg={3}></Col>
